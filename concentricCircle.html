@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--edit here-->
+    <title>Colorful Concentric Circles with Python Turtle</title>
+    
+    <link rel="stylesheet" href="./prism.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <top-section class="top-nav">
+    <div>
+      <img src="./exmo.png" height="47px" top="10px">
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <!--add links-->
+      <li><a href="./SHM.html">An Artistic Exploration of Simple Harmonic Motion with Python Turtle</a></li>
+      <li><a href="./turtles1.html">Exploring Colorful Patterns with Python's Turtle Graphics</a></li>
+      <li><a href="./spirals.html" >Mesmerizing Spirals: A Colorful Turtle Art Adventure</a></li>
+      <li><a href="./Circular.html">Colorful Spiral Art with Python Turtle</a></li>
+      <li><a href="./ImageTracing.html">Drawing from an Image using OpenCV and Turtle</a></li>
+      <li><a href="./Spirograph.html">Spirograph Art with Python Turtle</a></li>
+      <li><a href="./gravity.html">Planetary motion</a></li>
+      <li><a href="./Functions.html">Visualizing Complex-Valued Functions</a></li>
+      <li><a href="./pendulum.html">Double Pendulum Simulation with Python Turtle</a></li>
+      <li><a href="./concentricCircle.html">Colorful Concentric Circles with Python Turtle</a></li>
+      <li><a href="./heart.html">Heart Shape with Python Turtle</a></li>
+      <li><a href="./clock.html">Python Turtle Clock</a></li>
+
+    </ul>
+  </top-section>
+
+
+<body>
+    <script>/*<![CDATA[*/ /* Codebox Script by Fineshop Design */ function copyC(e,t){var o=document.getElementById(e),n=document.getElementById(t),e=getSelection(),t=document.createRange();e.removeAllRanges(),t.selectNodeContents(n),e.addRange(t),document.execCommand("copy"),e.removeAllRanges(),o.classList.add("copied"),document.getElementById("toastNotif").innerHTML="<span>Copied to Clipboard!</span>",setTimeout(()=>{o.classList.remove("copied")},3e3)} /*]]>*/</script>
+    <div id="content" class="content-wrapper">
+    <script src="./prism.js"></script>
+    <h1>Colorful Concentric Circles with Python Turtle</h1>
+    <p>
+        Welcome to this Python Turtle adventure! In this web page, we'll introduce you to a Python program that uses Turtle graphics to draw colorful concentric circles. The program creates mesmerizing patterns by drawing circles with different radii and colors on a black canvas.
+    </p>
+    <h2 class="panel-sticky">Drawing Colorful Concentric Circles</h2>
+    <p>
+        The Python program uses the Turtle graphics library to draw the concentric circles. It iterates through a loop, drawing circles of increasing radii, and changes the colors as the loop progresses. The colors used for the circles are red, yellow, and orange.
+    </p>
+     <!--[ Code Box ]-->
+     <div class='cBox'>
+        <div class='cBoxH'>
+          <!--[ Heading ]-->
+          <span>Code --&gt; python</span>
+          <!--[ Copy Button ]-->
+          <button id='copy3' class='cBoxB' onclick="copyC('copy3','code3')">
+            <i class='icn'></i>
+          </button>
+        </div>
+        <!--[ python-code ]-->
+<div id='code3'>
+<pre class="line-numbers">
+<code class="language-python"> <pre><code>
+    import turtle
+    from turtle import *
+    
+    bgcolor("black")
+    speed(0)
+    hideturtle()
+    for i in range(120):
+        color("red")
+        circle(i)
+        color("yellow")
+        circle(i * 1.1)
+        color("orange")
+        circle(i * 1.2)
+        right(3)
+        forward(3)
+    
+    done()    </code></pre>
+</code>
+</pre>
+</div>
+      </div>
+
+    <h2 class="panel-sticky">Running the Python Code</h2>
+    <p>
+        To see the colorful concentric circles drawing in action, save the Python code to a file with a .py extension, such as concentric_circles.py. Open a terminal or command prompt, navigate to the folder containing the file, and execute the following command:
+    </p>
+     <!--[ Code Box ]-->
+     <div class='cBox'>
+        <div class='cBoxH'>
+          <!--[ Heading ]-->
+          <span>Code --&gt; python</span>
+          <!--[ Copy Button ]-->
+          <button id='copy3' class='cBoxB' onclick="copyC('copy3','code3')">
+            <i class='icn'></i>
+          </button>
+        </div>
+        <!--[ python-code ]-->
+<div id='code3'>
+<pre class="line-numbers">
+<code class="language-python">python colorful_spiral.py
+</code>
+</pre>
+</div>
+</div>
+    <h2 class="panel-sticky">Behold the Colorful Patterns</h2>
+    <p>
+        As you run the Python program, a Turtle graphics window will pop up, and you'll witness the mesmerizing patterns of colorful concentric circles being drawn on the black canvas. The changing colors and radii create a visual spectacle that showcases the creative potential of Python Turtle!
+    </p>
+    <h2 class="panel-sticky">Experiment and Customize</h2>
+    <p>
+        Feel free to experiment with the number of circles, the angle of rotation, or the colors used to create different variations of the colorful patterns. You can unleash your creativity and generate unique artworks!
+    </p>
+    <h2 class="panel-sticky">Conclusion</h2>
+    <p>
+        With just a few lines of Python code and the magic of Turtle graphics, you've created beautiful and colorful concentric circles. It's a delightful way to explore the artistic side of Python and witness the stunning visual effects of simple geometric shapes.
+    </p>
+    <p>
+        Now you have the tools to create captivating visual patterns. Share your creations and let others enjoy the mesmerizing world of Python Turtle art!
+    </p>
+
+</body>
+</html>

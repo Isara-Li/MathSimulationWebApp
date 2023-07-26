@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!--edit here-->
+    <title>Heart Shape with Python Turtle</title>
+    
+    <link rel="stylesheet" href="./prism.css">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <top-section class="top-nav">
+    <div>
+      <img src="./exmo.png" height="47px" top="10px">
+    </div>
+    <input id="menu-toggle" type="checkbox" />
+    <label class='menu-button-container' for="menu-toggle">
+    <div class='menu-button'></div>
+  </label>
+    <ul class="menu">
+      <!--add links-->
+      <li><a href="./SHM.html">An Artistic Exploration of Simple Harmonic Motion with Python Turtle</a></li>
+      <li><a href="./turtles1.html">Exploring Colorful Patterns with Python's Turtle Graphics</a></li>
+      <li><a href="./spirals.html" >Mesmerizing Spirals: A Colorful Turtle Art Adventure</a></li>
+      <li><a href="./Circular.html">Colorful Spiral Art with Python Turtle</a></li>
+      <li><a href="./ImageTracing.html">Drawing from an Image using OpenCV and Turtle</a></li>
+      <li><a href="./Spirograph.html">Spirograph Art with Python Turtle</a></li>
+      <li><a href="./gravity.html">Planetary motion</a></li>
+      <li><a href="./Functions.html">Visualizing Complex-Valued Functions</a></li>
+      <li><a href="./pendulum.html">Double Pendulum Simulation with Python Turtle</a></li>
+      <li><a href="./concentricCircle.html">Colorful Concentric Circles with Python Turtle</a></li>
+      <li><a href="./heart.html">Heart Shape with Python Turtle</a></li>
+      <li><a href="./clock.html">Python Turtle Clock</a></li>
+
+    </ul>
+  </top-section>
+
+
+
+
+<body>
+    <script>/*<![CDATA[*/ /* Codebox Script by Fineshop Design */ function copyC(e,t){var o=document.getElementById(e),n=document.getElementById(t),e=getSelection(),t=document.createRange();e.removeAllRanges(),t.selectNodeContents(n),e.addRange(t),document.execCommand("copy"),e.removeAllRanges(),o.classList.add("copied"),document.getElementById("toastNotif").innerHTML="<span>Copied to Clipboard!</span>",setTimeout(()=>{o.classList.remove("copied")},3e3)} /*]]>*/</script>
+    <div id="content" class="content-wrapper">
+    <script src="./prism.js"></script>
+    <h1>Heart Shape with Python Turtle</h1>
+    <p>
+        Welcome to this Python Turtle adventure! In this web page, we'll introduce you to a Python program that uses Turtle graphics to draw a heart shape. The heart shape is formed using mathematical equations and the fascinating properties of sin and cos functions.
+    </p>
+    <h2 class="panel-sticky">The Heart Shape Equations</h2>
+    <p>
+        The heart shape is generated using the following mathematical equations:
+    </p>
+     <!--[ Code Box ]-->
+     <div class='cBox'>
+        <div class='cBoxH'>
+          <!--[ Heading ]-->
+          <span>Code --&gt; python</span>
+          <!--[ Copy Button ]-->
+          <button id='copy3' class='cBoxB' onclick="copyC('copy3','code3')">
+            <i class='icn'></i>
+          </button>
+        </div>
+        <!--[ python-code ]-->
+<div id='code3'>
+<pre class="line-numbers">
+<code class="language-python">
+def hearta(k):
+    return 15 * math.sin(k) ** 3
+
+def heartb(k):
+    return 12 * math.cos(k) - 5 * math.cos(2 * k) - 2 * math.cos(3 * k) - math.cos(4 * k)
+</code>
+</pre>
+</div>
+      </div>
+
+    <h2 class="panel-sticky">Drawing the Heart Shape</h2>
+    <p>
+        To draw the heart shape, the Python program uses the Turtle graphics library. The heart shape is drawn by iterating through the equations for different values of <code>k</code> and plotting the corresponding (x, y) points on the canvas.
+    </p>
+     <!--[ Code Box ]-->
+     <div class='cBox'>
+        <div class='cBoxH'>
+          <!--[ Heading ]-->
+          <span>Code --&gt; python</span>
+          <!--[ Copy Button ]-->
+          <button id='copy3' class='cBoxB' onclick="copyC('copy3','code3')">
+            <i class='icn'></i>
+          </button>
+        </div>
+        <!--[ python-code ]-->
+<div id='code3'>
+<pre class="line-numbers">
+<code class="language-python">
+from turtle import *
+import math
+
+speed(60000)
+bgcolor("black")
+for i in range(6000):
+    goto(hearta(i) * 20, heartb(i) * 20)
+    for j in range(5):
+        color("#f73487")
+    goto(0, 0)
+
+done()
+</code>
+</pre>
+</div>
+      </div>
+
+    <h2 class="panel-sticky">Running the Python Code</h2>
+    <p>
+        To see the heart shape drawing in action, save the Python code to a file with a .py extension, such as heart_shape.py. Open a terminal or command prompt, navigate to the folder containing the file, and execute the following command:
+    </p>
+    <pre><code>
+python heart_shape.py
+    </code></pre>
+
+    <h2 class="panel-sticky">Behold the Heart Shape</h2>
+    <p>
+        As you run the Python program, a Turtle graphics window will pop up, and you'll witness the beautiful heart shape being drawn on the canvas. It's a mesmerizing display that showcases the artistry of mathematical functions and the power of Python Turtle!
+    </p>
+
+    <h2 class="panel-sticky">Experiment and Explore</h2>
+    <p>
+        Feel free to experiment with different values in the hearta and heartb functions to create variations of the heart shape. You can change the colors, speed, or the size of the heart to customize your own unique creation!
+    </p>
+
+    <h2 class="panel-sticky">Conclusion</h2>
+    <p>
+        With just a few lines of Python code and the magic of Turtle graphics, you've created a beautiful heart shape. It's a delightful way to explore the artistic side of Python while learning about the beauty of mathematics.
+    </p>
+    <p>
+        Share your heart-shaped artwork and spread the love of Python programming with others!
+    </p>
+
+</body>
+</html>

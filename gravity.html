@@ -3,7 +3,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>Mesmerizing Spirals: A Colorful Turtle Art Adventure</title>
+    <title>Planetary motion</title>
     
     <link rel="stylesheet" href="./prism.css">
     <link rel="stylesheet" href="./styles.css">
@@ -31,8 +31,9 @@
       <li><a href="./Circular.html">Colorful Spiral Art with Python Turtle</a></li>
       <li><a href="./ImageTracing.html">Drawing from an Image using OpenCV and Turtle</a></li>
       <li><a href="./Spirograph.html">Spirograph Art with Python Turtle</a></li>
-      <li><a href="./gravity.html"></a></li>
-      
+      <li><a href="./gravity.html">Planetary motion</a></li>
+      <li><a href="./Functions.html">Visualizing Complex-Valued Functions</a></li>
+
     </ul>
   </top-section>
   
@@ -40,6 +41,7 @@
   
 <body>
     <div id="content" >
+    <h1>Planetary Motion</h1>
     <section>
     <!--[ Code Box ]-->
       <div class='cBox'>
@@ -55,23 +57,20 @@
 <div id='code3'>
 <pre class="line-numbers">
 <code class="language-python">from turtle import *
-    import math
-    dot(70,"red")
-    up()
-    setposition(300,0)
-    down()
-    color("blue","blue")
-    shape("circle")
-    loop = True
-    xvel = 0
-    yvel = 1
-    while loop == True:
-        xvel +=  math.cos(math.radians(towards(0,0)))*(1000/(xcor()**2+ycor()**2))
-        yvel +=  math.sin(math.radians(towards(0,0)))*(1000/(xcor()**2+ycor()**2))
-        setposition(xcor()+xvel,ycor()+yvel)
-    
-  
-  
+import math
+dot(70,"red")
+up()
+setposition(300,0)
+down()
+color("blue","blue")
+shape("circle")
+loop = True
+xvel = 0
+yvel = 1
+while loop == True:
+    xvel +=  math.cos(math.radians(towards(0,0)))*(1000/(xcor()**2+ycor()**2))
+    yvel +=  math.sin(math.radians(towards(0,0)))*(1000/(xcor()**2+ycor()**2))
+    setposition(xcor()+xvel,ycor()+yvel)
 </code>
 </pre>
 </div>
@@ -90,7 +89,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Import necessary modules:
         </h2>
         <p>
@@ -101,7 +100,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Draw the red dot:
         </h2>
         <p>
@@ -112,7 +111,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Set initial position and shape for the blue circle:
         </h2>
         <p>
@@ -123,7 +122,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Initialize variables:
         </h2>
         <p>
@@ -134,7 +133,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Animation loop:
         </h2>
         <p>
@@ -145,7 +144,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Update velocity components:
         </h2>
         <p>
@@ -156,7 +155,7 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <h2>
             Update position:
         </h2>
         <p>
@@ -167,9 +166,9 @@
 
 <section>
     <div>
-        <h2 class="panel-sticky">
+        <p>
             The blue circle will start at the position (300, 0) and be affected by the gravitational attraction of the red dot. The circle's path will be influenced by the gravitational pull, resulting in an animated motion as it moves closer to the red dot. The simulation will continue indefinitely due to the infinite loop.
-        </h2>
+        </p>
     </div>
 </section>
 <footer>
